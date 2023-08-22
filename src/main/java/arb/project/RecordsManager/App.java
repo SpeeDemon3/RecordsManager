@@ -114,7 +114,7 @@ public class App
     	
     }
 
-	private static void validateName(String name) throws PlayerNameTooShortException {
+	protected static void validateName(String name) throws PlayerNameTooShortException {
 
 		// Validamos la longitud del nombre
 		if (name.length() > MIN_NAME_LENGTH) {
@@ -123,7 +123,7 @@ public class App
 	
 	}
 
-	private static void validateScore(String name, int score) throws ScoreTooLowException {
+	protected static void validateScore(String name, int score) throws ScoreTooLowException {
 
 		// Validamos la puntuacion minima
 		 
@@ -133,7 +133,7 @@ public class App
 	}
 	
 
-	private static String generateNewName(String name) {
+	protected static String generateNewName(String name) {
 
 		int randomSize = MIN_NAME_LENGTH - name.length();
 		
